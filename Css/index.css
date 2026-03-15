@@ -21,6 +21,7 @@ header {
     font-size: 32px;
     font-weight: bold;
 }
+
 .navbar {
     position: relative;
     display: grid;
@@ -124,7 +125,7 @@ header {
 }
 
 .bgtext h2 {
-    font-size: 36px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -226,14 +227,10 @@ header {
     margin-top:25px;
 }
 
-.list a{
-    text-decoration:none;
-}
-
 .box{
     display:inline-block;
     margin-top:20px;
-    background:#00732F;
+    background:white;
     color:white;
     padding:12px 22px;
     border-radius:6px;
