@@ -13,18 +13,14 @@ body{
     color:#222;
 }
 
-.top-header{
-    background:#00732F;
-    color:white;
-    text-align:center;
-    padding:20px;
+header {
+    background-color: #00732F;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
 }
-
-.top-header h1{
-    margin:0;
-    font-size:34px;
-}
-
 .navbar {
     position: relative;
     display: grid;
@@ -118,6 +114,25 @@ body{
 .content a:hover {
     background: #f2f2f2;
     color: #C8102E;
+}
+
+.top {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #00732F, #009B3A);
+    color: white;
+}
+
+.top h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.top p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
 }
 
 .bg{
