@@ -483,3 +483,120 @@ footer{
     padding:25px;
 >>>>>>> c2985479d30da70c373f127cb75e600afe70cea3
 }
+
+@media (max-width: 992px){
+    .mapcontainer{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .topgrid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        font-size:24px;
+        padding:15px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        justify-content:center;
+        padding:15px 20px;
+        height:auto;
+    }
+
+    .logo{
+        margin-bottom:15px;
+    }
+
+    .logo img{
+        height:60px;
+        margin-right:0;
+    }
+
+    .links{
+        position:static;
+        left:auto;
+        transform:none;
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+        width:100%;
+    }
+
+    .links a{
+        font-size:16px;
+    }
+
+    .content{
+        position:static;
+        min-width:100%;
+        max-height:none;
+        box-shadow:none;
+        text-align:center;
+    }
+
+    .top{
+        height:auto;
+    }
+
+    .topgrid{
+        grid-template-columns:1fr;
+        height:auto;
+    }
+
+    .topgrid img{
+        height:220px;
+    }
+
+    .toptext{
+        width:90%;
+        padding:18px 20px;
+    }
+
+    .toptext h2{
+        font-size:26px;
+    }
+
+    .toptext p{
+        font-size:15px;
+    }
+
+    .maps{
+        padding:35px 15px;
+    }
+
+    .maps h2{
+        font-size:24px;
+    }
+
+    .mapcontainer{
+        grid-template-columns:1fr;
+    }
+
+    .about,
+    .place,
+    .act,
+    .tip{
+        padding:40px 20px;
+    }
+
+    .about h2,
+    .place h2,
+    .act h2,
+    .tip h2{
+        font-size:26px;
+    }
+
+    .box div{
+        width:100%;
+        max-width:320px;
+    }
+
+    footer{
+        padding:18px;
+        font-size:14px;
+    }
+}
