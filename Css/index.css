@@ -116,19 +116,19 @@ header {
     color: #C8102E;
 }
 
-.top {
+.bg {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(135deg, #00732F, #009B3A);
     color: white;
 }
 
-.top h2 {
+.bgtext h2 {
     font-size: 36px;
     margin-bottom: 10px;
 }
 
-.top p {
+.bgtext p {
     font-size: 18px;
     max-width: 800px;
     margin: auto;
@@ -147,21 +147,6 @@ header {
     align-items:center;
     text-align:center;
     padding:20px;
-}
-
-.bgtext{
-    color:white;
-    max-width:800px;
-}
-
-.bgtext h2{
-    font-size:48px;
-    margin-bottom:10px;
-}
-
-.bgtext p{
-    font-size:20px;
-    line-height:1.6;
 }
 
 .btn{
@@ -257,8 +242,8 @@ header {
     transition:0.3s;
 }
 
-.box:hover a{
-    background:#00732F;
+.box:hover{
+    background:#C8102E;
     color:red;
     transform:translateY(-3px);
 }
