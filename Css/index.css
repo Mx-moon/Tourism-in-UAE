@@ -18,7 +18,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -118,22 +118,27 @@ header {
 }
 
 .top {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #00732F, #009B3A);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.55);
     color: white;
+    padding: 25px 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
 }
 
 .top h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: 38px;
 }
 
 .top p {
+    margin-top: 10px;
     font-size: 18px;
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.6;
 }
 
 .bg{
@@ -230,7 +235,7 @@ header {
 .box{
     display:inline-block;
     margin-top:20px;
-    background:white;
+    background:#00732F;;
     color:white;
     padding:12px 22px;
     border-radius:6px;
