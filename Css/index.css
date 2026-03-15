@@ -242,8 +242,7 @@ header {
     transition:0.3s;
 }
 
-.box:hover{
-    background:#C8102E;
+.box a:hover{
     color:red;
     transform:translateY(-3px);
 }
