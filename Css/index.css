@@ -117,19 +117,19 @@ header {
     color: #C8102E;
 }
 
-.bg {
+.top {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(135deg, #00732F, #009B3A);
     color: white;
 }
 
-.bgtext h2 {
-    font-size: 20px;
+.top h2 {
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
-.bgtext p {
+.top p {
     font-size: 18px;
     max-width: 800px;
     margin: auto;
