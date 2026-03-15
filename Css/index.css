@@ -258,7 +258,7 @@ header {
 
 .box:hover a{
     background:#00732F;
-    color:white;
+    color:red;
     transform:translateY(-3px);
 }
 
