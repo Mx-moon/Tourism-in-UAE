@@ -25,105 +25,101 @@ body{
     font-size:34px;
 }
 
-/* ===== NAVBAR ===== */
-.navbar{
-    background:#000;
-    padding:10px 25px;
-    min-height:90px;
-
-    display:grid;
-    grid-template-columns:220px 1fr 220px;
-    align-items:center;
+.navbar {
+    position: relative;
+    display: grid;
+    grid-template-columns: 90px 1fr 90px;
+    align-items: center;
+    background: #000;
+    padding: 12px 30px;
+    min-height: 90px;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
+.logo {
+    display: flex;
+    align-items: center;
+    justify-self: start;
 }
 
-.logo img{
-    height:70px;
-    display:block;
+.logo img {
+    height: 70px;
+    display: block;
 }
 
-.links{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:25px;
-    margin:0;
-    padding:0;
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    grid-column: 2;
 }
 
-.links li{
-    list-style:none;
+.links li {
+    list-style: none;
 }
 
-.links a{
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-    transition:0.3s;
+.links a,
+.dropdown summary {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+    list-style: none;
 }
 
-.links a:hover{
-    color:#C8102E;
+.links a:hover,
+.dropdown summary:hover {
+    color: #C8102E;
 }
 
-.dropdown{
-    position:relative;
+.dropdown {
+    position: relative;
 }
 
-.dropdown summary{
-    color:white;
-    cursor:pointer;
-    list-style:none;
-    font-size:18px;
-    transition:0.3s;
+.dropdown summary {
+    list-style: none;
 }
 
-.dropdown summary:hover{
-    color:#C8102E;
+.dropdown summary::-webkit-details-marker {
+    display: none;
 }
 
-.dropdown summary::-webkit-details-marker{
-    display:none;
+.content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 230px;
+    max-height: 260px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 6px;
+    margin-top: 10px;
 }
 
-.content{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    background:white;
-    min-width:230px;
-    max-height:260px;
-    overflow-y:auto;
-    box-shadow:0 4px 8px rgba(0,0,0,0.2);
-    border-radius:6px;
-    z-index:1000;
-    margin-top:8px;
+.dropdown[open] .content {
+    display: block;
 }
 
-.dropdown[open] .content{
-    display:block;
+.content a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
 }
 
-.content a{
-    display:block;
-    padding:10px 12px;
-    color:black;
-    text-decoration:none;
+.content a:hover {
+    background: #f2f2f2;
+    color: #C8102E;
 }
 
-.content a:hover{
-    background:#f2f2f2;
-    color:#C8102E;
-}
-
-/* ===== HERO ===== */
 .bg{
     background:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -222,7 +218,6 @@ body{
     padding:0 15px 20px;
 }
 
-/* ===== CLICKABLE + HOVER BOXES ===== */
 .list{
     display:flex;
     flex-wrap:wrap;
@@ -246,7 +241,7 @@ body{
     transition:0.3s;
 }
 
-.box:hover{
+.box:hover a{
     background:#00732F;
     color:white;
     transform:translateY(-3px);
@@ -294,7 +289,6 @@ footer{
     padding:25px;
 }
 
-/* ===== TABLET ===== */
 @media (max-width:992px){
     .navbar{
         grid-template-columns:140px 1fr 140px;
@@ -311,7 +305,6 @@ footer{
     }
 }
 
-/* ===== PHONE ===== */
 @media (max-width:768px){
     .top-header h1{
         font-size:26px;
