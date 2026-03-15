@@ -25,72 +25,80 @@ body {
     font-size: 34px;
 }
 
-.navbar{
-    display:flex;
-    align-items:center;
-    background:#000;
-    padding:10px 25px;
-    position:relative;
-    flex-wrap:wrap;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    padding: 12px 30px;
+    position: relative;
+    flex-wrap: wrap;
+    min-height: 90px;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-.logo img{
-    height:70px;
-    margin-right:10px;
+.logo img {
+    height: 70px;
+    margin-right: 10px;
 }
 
-.links{
-    list-style:none;
-    display:flex;
-    gap:25px;
-    margin:0;
-    padding:0;
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
+.links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    position: static;
+    transform: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.links a{
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-    transition:0.3s;
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    white-space: nowrap;
 }
 
-.links a:hover{
-    color:#C8102E;
+.links a:hover {
+    color: #C8102E;
 }
 
-.dropdown{
-    position:relative;
+.dropdown {
+    position: relative;
 }
 
-.content{
-    display:none;
-    position:absolute;
-    background:white;
-    min-width:220px;
-    max-height:250px;
-    overflow-y:auto;
-    box-shadow:0 4px 8px rgba(0,0,0,0.2);
-    z-index:1000;
+.content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 220px;
+    max-height: 250px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-.content a{
-    display:block;
-    padding:10px;
-    color:black;
-    text-decoration:none;
+.content a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
 }
 
-.content a:hover{
-    background:#f2f2f2;
-    color:#C8102E;
+.content a:hover {
+    background: #f2f2f2;
+    color: #C8102E;
 }
 
 .top {
